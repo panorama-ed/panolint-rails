@@ -14,9 +14,9 @@ Gem::Specification.new do |spec|
   spec.metadata      = { "rubygems_mfa_required" => "true" }
 
   spec.files         = Dir.chdir(File.expand_path(__dir__)) do
-                         `git ls-files -z`.split("\x0")
-                       end
+    `git ls-files -z`.split("\x0")
+  end
 
   spec.add_dependency "brakeman", "5.4.1"
-  spec.add_dependency "rubocop-rails", "2.19.0
+  spec.add_dependency "rubocop-rails", "2.19.0"
 end

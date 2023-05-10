@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "brakeman", "5.4.0"
-  spec.add_dependency "rubocop-rails", "2.19.0"
+  spec.add_dependency "rubocop-rails", "2.19.1"
 end

@@ -1,0 +1,25 @@
+# These are the default code conventions for Panorama Rails projects.
+#
+# You can use this in your project's .rubocop.yml with the following at the top:
+#
+#     inherit_gem:
+#       panolint-rails: panolint-rails-rubocop.yml
+#
+# This allows you to selectively override settings in projects.
+
+inherit_gem:
+  panolint-ruby: panolint-ruby-rubocop.yml
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - "db/schema.rb"
+    - "db/migrate/**/*"
+  NewCops: enable
+
+Rails/I18nLocaleTexts:
+  Enabled: false

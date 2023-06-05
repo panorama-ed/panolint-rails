@@ -4,15 +4,18 @@
 
 A small gem containing rules for linting Ruby on Rails code at Panorama Education.
 
-This gem inherits RuboCop configuration from [panolint-ruby](https://github.com/panorama-ed/panolint-ruby) so it should be used *in place of* (not in combination with) `panolint-ruby`.
+This gem inherits RuboCop configuration from [panolint-ruby](https://github.com/panorama-ed/panolint-ruby).
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add these lines to your application's Gemfile:
 
 ```
+gem "panolint-ruby", git: "https://github.com/panorama-ed/panolint-ruby.git", branch: "main"
 gem "panolint-rails", git: "https://github.com/panorama-ed/panolint-rails.git", branch: "main"
 ```
+
+It is necessary to have `panolint-ruby` in your application's Gemfile. This is necessary despite `panolint-rails`'s Rubocop configuration inheriting from [panolint-ruby](https://github.com/panorama-ed/panolint-ruby) because we want to point to the up-to-date GitHub repository rather than the initial version on RubyGems. `panolint-rails` cannot simply have `panolint-ruby` as a dependency in its gemspec because the gemspec can only point to RubyGems but not GitHub repositories as we would desire it to.
 
 And then execute:
 

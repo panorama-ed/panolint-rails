@@ -15,7 +15,13 @@ require:
   - rubocop-rails
   - rubocop-rspec
 
+# This `inherit_mode` merges this repo's "Exclude" list with the list from
+# `panolint-ruby`, which this config inherits from. When a repo uses this gem,
+# and inherits from this config, it then inherits the merged exclusions list.
 AllCops:
+  inherit_mode:
+      merge:
+        - Exclude
   Exclude:
     - "db/schema.rb"
     - "db/migrate/**/*"

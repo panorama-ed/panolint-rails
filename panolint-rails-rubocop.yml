@@ -14,6 +14,7 @@ require:
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-rspec_rails
 
 # This `inherit_mode` merges this repo's "Exclude" list with the list from
 # `panolint-ruby`, which this config inherits from. When a repo uses this gem,

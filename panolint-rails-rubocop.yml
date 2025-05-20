@@ -10,10 +10,8 @@
 inherit_gem:
   panolint-ruby: panolint-ruby-rubocop.yml
 
-require:
-  - rubocop-performance
+plugins:
   - rubocop-rails
-  - rubocop-rspec
   - rubocop-rspec_rails
 
 # This `inherit_mode` merges this repo's "Exclude" list with the list from

@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0")
   end
 
-  spec.add_dependency "brakeman", "7.0.2"
+  spec.add_dependency "brakeman", "7.1.0"
   spec.add_dependency "rubocop-rails", "2.32.0"
   spec.add_dependency "rubocop-rspec_rails", "2.31.0"
 end
